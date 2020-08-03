@@ -1,12 +1,12 @@
 Build
 ```
-docker build -t recog_face .
+docker build -t akshay090/face_recognition:gpu-api .
 ```
 
 
 Run 
 ```
-docker run --gpus all -it -v ~/akshay/face_recognition:/app --name face_recog-gpu-api -p 80:80 akshay090/face_recognition:gpu-api
+docker run --gpus all -it -v ~/akshay/face_recognition:/app -p 80:80 akshay090/face_recognition:gpu-api
 ```
 
 Pull 
